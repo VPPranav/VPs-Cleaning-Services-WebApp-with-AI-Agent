@@ -175,5 +175,3 @@ Visit: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 This project is for educational/demo purposes only. Feel free to reuse the code or chatbot flow with attribution.
 
-```
-
