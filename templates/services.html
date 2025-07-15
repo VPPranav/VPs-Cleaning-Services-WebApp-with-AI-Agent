@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | VP's Cleaning Services</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-sparkles"></i>
+          <span>VP's Cleaning</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="{{ url_for('services') }}" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Cleaning Services</h1>
+        <p>Professional cleaning solutions tailored for homes, offices, and commercial spaces</p>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+      <div class="container">
+        <div class="overview-content">
+          <h2>Comprehensive Cleaning Solutions</h2>
+          <p>We offer a wide range of professional cleaning services tailored for homes, offices, and commercial spaces. All our staff are background-verified and trained to use industry-grade equipment and eco-safe chemicals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Residential Services -->
+    <section class="service-category">
+      <div class="container">
+        <div class="category-header">
+          <div class="category-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="category-info">
+            <h2>Residential Cleaning</h2>
+            <p>Complete home cleaning solutions for every room and space</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3>Deep Home Cleaning</h3>
+            <p>Comprehensive cleaning for 1BHK to 5BHK apartments and houses</p>
+            <ul>
+              <li>All rooms deep cleaning</li>
+              <li>Dust removal from all surfaces</li>
+              <li>Floor mopping and vacuuming</li>
+              <li>Window and mirror cleaning</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Kitchen Degreasing & Sanitizing</h3>
+            <p>Professional kitchen cleaning and sanitization</p>
+            <ul>
+              <li>Appliance cleaning (inside & outside)</li>
+              <li>Cabinet and countertop cleaning</li>
+              <li>Grease removal from surfaces</li>
+              <li>Sink and faucet polishing</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-bath"></i>
+            </div>
+            <h3>Bathroom Deep Cleaning</h3>
+            <p>Thorough bathroom sanitization and cleaning</p>
+            <ul>
+              <li>Toilet deep cleaning and disinfection</li>
+              <li>Shower and bathtub scrubbing</li>
+              <li>Tile and grout cleaning</li>
+              <li>Mirror and fixture polishing</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-couch"></i>
+            </div>
+            <h3>Sofa & Carpet Shampooing</h3>
+            <p>Professional upholstery and carpet cleaning</p>
+            <ul>
+              <li>Deep fabric cleaning</li>
+              <li>Stain removal treatment</li>
+              <li>Odor elimination</li>
+              <li>Fabric protection application</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-truck-moving"></i>
+            </div>
+            <h3>Move-in / Move-out Cleaning</h3>
+            <p>Complete cleaning for property transitions</p>
+            <ul>
+              <li>Empty property deep cleaning</li>
+              <li>All surfaces sanitization</li>
+              <li>Appliance cleaning</li>
+              <li>Ready-to-occupy cleaning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commercial Services -->
+    <section class="service-category alt-bg">
+      <div class="container">
+        <div class="category-header">
+          <div class="category-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <div class="category-info">
+            <h2>Office & Commercial Cleaning</h2>
+            <p>Professional cleaning services for workspaces and commercial properties</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <h3>Workspace Disinfection</h3>
+            <p>Complete office cleaning and sanitization</p>
+            <ul>
+              <li>Desk and workstation cleaning</li>
+              <li>Computer and equipment sanitizing</li>
+              <li>Floor cleaning and mopping</li>
+              <li>Trash removal and replacement</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-coffee"></i>
+            </div>
+            <h3>Pantry & Restroom Cleaning</h3>
+            <p>Specialized cleaning for common areas</p>
+            <ul>
+              <li>Kitchen and pantry deep cleaning</li>
+              <li>Restroom sanitization</li>
+              <li>Appliance cleaning</li>
+              <li>Supply restocking</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-hard-hat"></i>
+            </div>
+            <h3>Post-Construction Cleaning</h3>
+            <p>Cleanup after construction or renovation work</p>
+            <ul>
+              <li>Debris and dust removal</li>
+              <li>Surface cleaning and polishing</li>
+              <li>Window and glass cleaning</li>
+              <li>Final touch-up cleaning</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-window-maximize"></i>
+            </div>
+            <h3>Window & Glass Panel Polishing</h3>
+            <p>Professional window and glass cleaning</p>
+            <ul>
+              <li>Interior and exterior windows</li>
+              <li>Glass panel cleaning</li>
+              <li>Frame and sill cleaning</li>
+              <li>Streak-free finish</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>Contract Cleaning</h3>
+            <p>Regular cleaning schedules for businesses</p>
+            <ul>
+              <li>Daily cleaning services</li>
+              <li>Weekly maintenance</li>
+              <li>Monthly deep cleaning</li>
+              <li>Customized schedules</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialty Services -->
+    <section class="service-category">
+      <div class="container">
+        <div class="category-header">
+          <div class="category-icon">
+            <i class="fas fa-spray-can"></i>
+          </div>
+          <div class="category-info">
+            <h2>Specialty Services</h2>
+            <p>Advanced cleaning solutions for specific needs</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-virus-slash"></i>
+            </div>
+            <h3>Steam Sanitization (COVID-Safe)</h3>
+            <p>Advanced sanitization using steam technology</p>
+            <ul>
+              <li>99.9% germ elimination</li>
+              <li>Chemical-free sanitization</li>
+              <li>Safe for all surfaces</li>
+              <li>COVID-19 protocol compliant</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-bug"></i>
+            </div>
+            <h3>Pest Control</h3>
+            <p>Professional pest control in collaboration with certified partners</p>
+            <ul>
+              <li>Comprehensive pest inspection</li>
+              <li>Safe treatment methods</li>
+              <li>Follow-up services</li>
+              <li>Prevention recommendations</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-bed"></i>
+            </div>
+            <h3>Upholstery & Mattress Cleaning</h3>
+            <p>Deep cleaning for furniture and mattresses</p>
+            <ul>
+              <li>Deep fabric cleaning</li>
+              <li>Dust mite removal</li>
+              <li>Stain and odor treatment</li>
+              <li>Allergen elimination</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-tint"></i>
+            </div>
+            <h3>Water Tank Cleaning</h3>
+            <p>Professional water tank cleaning and sanitization</p>
+            <ul>
+              <li>Complete tank draining</li>
+              <li>Interior scrubbing and cleaning</li>
+              <li>Disinfection treatment</li>
+              <li>Quality testing</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3>Floor Scrubbing & Marble Polishing</h3>
+            <p>Specialized floor care and restoration</p>
+            <ul>
+              <li>Deep floor scrubbing</li>
+              <li>Marble polishing and restoration</li>
+              <li>Protective coating application</li>
+              <li>Maintenance recommendations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Need a Custom Quote?</h2>
+          <p>Unsure which service fits you best? Call us now or chat on WhatsApp – we're here to help!</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+            <a href="https://wa.me/919876543210" class="btn btn-secondary" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp Chat
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-sparkles"></i>
+            <span>VP's Cleaning Services</span>
+          </div>
+          <p>Your trusted partner for spotless spaces and stress-free living since 2018.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fas fa-envelope"></i> support@vpscleaning.in</p>
+            <p><i class="fas fa-map-marker-alt"></i> Whitefield, Bangalore</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 VP's Cleaning Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+ <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '687631904b8ae82932e4213e' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>

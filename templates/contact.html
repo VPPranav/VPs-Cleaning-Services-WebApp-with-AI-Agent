@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | VP's Cleaning Services</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-sparkles"></i>
+          <span>VP's Cleaning</span>
+        </div>
+        <ul class="nav-menu">
+           <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="{{ url_for('services') }}" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact VP's Cleaning Services</h1>
+        <p>Get in touch with us for a free quote and professional cleaning services</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info-section">
+            <h2>Get In Touch</h2>
+            <p>Ready to experience professional cleaning services? Contact us today for a free quote!</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-info">
+                  <h3>Phone</h3>
+                  <p><strong>Main:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+                  <p><strong>Emergency 24x7:</strong> <a href="tel:+917000012345">+91 70000 12345</a></p>
+                  <span class="hours">9:00 AM – 8:00 PM</span>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-info">
+                  <h3>Email</h3>
+                  <p><strong>Support:</strong> <a href="mailto:support@vpscleaning.in">support@vpscleaning.in</a></p>
+                  <p><strong>Bookings:</strong> <a href="mailto:bookings@vpscleaning.in">bookings@vpscleaning.in</a></p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="method-info">
+                  <h3>WhatsApp</h3>
+                  <p><a href="https://wa.me/919876543210" target="_blank">+91 98765 43210</a></p>
+                  <span class="hours">Quick responses guaranteed</span>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="method-info">
+                  <h3>Website</h3>
+                  <p><a href="http://www.vpscleaning.in" target="_blank">www.vpscleaning.in</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-section">
+              <h3>Follow Us</h3>
+              <div class="social-links">
+                <a href="https://fb.com/vpscleaning" target="_blank" aria-label="Facebook">
+                  <i class="fab fa-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://instagram.com/vps_cleaning" target="_blank" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+                <a href="https://wa.me/919876543210" target="_blank" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-section">
+            <div class="form-container">
+              <h2>Request a Free Quote</h2>
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="service">Service Type</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option value="residential">Residential Cleaning</option>
+                    <option value="commercial">Commercial Cleaning</option>
+                    <option value="deep-cleaning">Deep Home Cleaning</option>
+                    <option value="kitchen">Kitchen Degreasing</option>
+                    <option value="bathroom">Bathroom Deep Cleaning</option>
+                    <option value="sofa-carpet">Sofa & Carpet Shampooing</option>
+                    <option value="move-in-out">Move-in/Move-out Cleaning</option>
+                    <option value="steam-sanitization">Steam Sanitization</option>
+                    <option value="pest-control">Pest Control</option>
+                    <option value="upholstery">Upholstery & Mattress Cleaning</option>
+                    <option value="water-tank">Water Tank Cleaning</option>
+                    <option value="floor-marble">Floor Scrubbing & Marble Polishing</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="property-size">Property Size</label>
+                  <select id="property-size" name="property-size">
+                    <option value="">Select property size</option>
+                    <option value="1bhk">1 BHK</option>
+                    <option value="2bhk">2 BHK</option>
+                    <option value="3bhk">3 BHK</option>
+                    <option value="4bhk">4 BHK</option>
+                    <option value="5bhk">5+ BHK</option>
+                    <option value="office-small">Small Office</option>
+                    <option value="office-medium">Medium Office</option>
+                    <option value="office-large">Large Office</option>
+                    <option value="commercial">Commercial Space</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Additional Details</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Tell us about your specific cleaning needs, preferred date/time, or any special requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                  Send Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="locations-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Office Locations</h2>
+          <p>Visit us at our convenient locations</p>
+        </div>
+        <div class="locations-grid">
+          <div class="location-card">
+            <div class="location-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Main Office - Bangalore</h3>
+            <div class="location-details">
+              <p><strong>Address:</strong></p>
+              <p>No. 42, Maple Avenue,<br>
+                 Whitefield, Bangalore – 560066<br>
+                 Karnataka, India</p>
+            </div>
+            <div class="location-contact">
+              <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fas fa-envelope"></i> support@vpscleaning.in</p>
+            </div>
+          </div>
+
+          <div class="location-card">
+            <div class="location-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Branch Office - Noida</h3>
+            <div class="location-details">
+              <p><strong>Address:</strong></p>
+              <p>Sector 63,<br>
+                 Noida – 201301<br>
+                 Uttar Pradesh, India</p>
+            </div>
+            <div class="location-contact">
+              <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fas fa-envelope"></i> bookings@vpscleaning.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+      <div class="container">
+        <h2>Quick Actions</h2>
+        <div class="actions-grid">
+          <a href="tel:+919876543210" class="action-card">
+            <i class="fas fa-phone"></i>
+            <h3>Call Now</h3>
+            <p>Speak directly with our team</p>
+          </a>
+          <a href="https://wa.me/919876543210" class="action-card" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <h3>WhatsApp</h3>
+            <p>Quick chat for instant quotes</p>
+          </a>
+          <a href="mailto:support@vpscleaning.in" class="action-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>Send detailed requirements</p>
+          </a>
+          <a href="tel:+917000012345" class="action-card emergency">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Emergency</h3>
+            <p>24/7 emergency cleaning</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-sparkles"></i>
+            <span>VP's Cleaning Services</span>
+          </div>
+          <p>Your trusted partner for spotless spaces and stress-free living since 2018.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fas fa-envelope"></i> support@vpscleaning.in</p>
+            <p><i class="fas fa-map-marker-alt"></i> Whitefield, Bangalore</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 VP's Cleaning Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+ <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '687631904b8ae82932e4213e' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>
