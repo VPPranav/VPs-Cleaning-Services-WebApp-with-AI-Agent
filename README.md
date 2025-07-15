@@ -1,4 +1,3 @@
-```markdown
 # 🧼 VP's Cleaning Services Website with AI Agent
 
 A professional, responsive cleaning services website integrated with an AI chatbot powered by [Voiceflow](https://www.voiceflow.com/). This project is built using **Flask** (Python), **HTML/CSS/JS**, and demonstrates how conversational AI can enhance customer engagement and automate lead generation, instant quotes, and phone/chat support.
